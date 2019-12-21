@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true,
+        "jest": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-vars": "warn"
+    },
+    "overrides": [
+        {
+            "files": [
+                "babel.config.js",
+                "jest.config.js"
+            ],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
+    ]
+}
