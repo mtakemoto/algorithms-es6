@@ -8,4 +8,24 @@ const inOrder = (node, output) => {
   return output;
 };
 
-export { inOrder };
+const preOrder = (node, output) => {
+  if (node == null) return output;
+
+  output.push(node.data);
+  preOrder(node.left, output);
+  preOrder(node.right, output);
+
+  return output;
+}
+
+const postOrder = (node, output) => {
+  if (node == null) return output;
+
+  postOrder(node.left, output);
+  postOrder(node.right, output);
+  output.push(node.data);
+
+  return output;
+}
+
+export { inOrder, preOrder, postOrder };
