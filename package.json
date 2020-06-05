@@ -14,7 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "npx majestic --config=./jest.config.js --json"
   },
   "author": "",
   "license": "ISC"
